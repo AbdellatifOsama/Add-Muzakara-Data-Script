@@ -12,7 +12,7 @@ def BuildTopicQuery(id,name, description,UnitId ,minutesAggregate,prerequisites,
 
 
 # Connect to the database
-connection = psycopg2.connect(database="MozakaraSystemDb", user="postgres", password="1234", host="localhost", port=5432)
+connection = psycopg2.connect(database="MozakaraSystemDb", user="postgres", password="postgres", host="localhost", port=5432)
 cursor = connection.cursor()
 
 # Load the data
