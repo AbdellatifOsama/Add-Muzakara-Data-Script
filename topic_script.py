@@ -16,7 +16,7 @@ connection = psycopg2.connect(database="MozakaraSystemDb", user="postgres", pass
 cursor = connection.cursor()
 
 # Load the data
-xls = pd.ExcelFile('Subjects.xlsx')
+xls = pd.ExcelFile('Yemen -General Education -level 11.xlsx')
 Topics = pd.read_excel(xls,'Lessons')
 
 print("Adding Topics to the database...............................")

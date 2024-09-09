@@ -15,8 +15,8 @@ connection = psycopg2.connect(database="MozakaraSystemDb", user="postgres", pass
 cursor = connection.cursor()
 
 # Load the data
-xls = pd.ExcelFile('Units.xlsx')
-Units = pd.read_excel(xls,'Sheet2')
+xls = pd.ExcelFile('Yemen -General Education -level 11.xlsx')
+Units = pd.read_excel(xls,'Units')
 
 print("Adding Units to the database...............................")
 for i in range(0, len(Units)):
