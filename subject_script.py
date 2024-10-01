@@ -11,7 +11,7 @@ def BuildSubjectQuery(id,name, description,studyLevelId ,unitsMinutesAggregate,v
     return query
 
 # Connect to the database
-connection = psycopg2.connect(database="MozakaraSystemDb", user="postgres", password="postgres", host="localhost", port=5432)
+connection = psycopg2.connect(database="MozakaraSystemDb", user="postgres", password="1234", host="localhost", port=5432)
 cursor = connection.cursor()
 
 # Load the data
